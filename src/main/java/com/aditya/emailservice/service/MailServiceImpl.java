@@ -12,14 +12,13 @@ import org.springframework.stereotype.Service;
 import com.aditya.emailservice.model.Mail;
 
 @Service
-public class MailServiceImpl implements MailService
-{
+public class MailServiceImpl implements MailService {
+	
 	@Autowired
 	private JavaMailSender javaMailSender;
-	
+
 	@Override
-	public void sendEmail(Mail mail) 
-	{
+	public void sendEmail(Mail mail) {
 		MimeMessage mimeMessage = javaMailSender.createMimeMessage();
 		try {
 			MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
@@ -28,8 +27,7 @@ public class MailServiceImpl implements MailService
 			mimeMessageHelper.setTo(mail.getMailTo());
 			mimeMessageHelper.setText(mail.getMailContent());
 			javaMailSender.send(mimeMessageHelper.getMimeMessage());
-		} 
-		catch (MessagingException e) {
+		} catch (MessagingException e) {
 			e.printStackTrace();
 		}
 	}
