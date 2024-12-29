@@ -1,4 +1,4 @@
-package com.aditya.emailservice.service;
+package com.shreyansh.emailservice.service;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.InternetAddress;
@@ -9,7 +9,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
-import com.aditya.emailservice.model.Mail;
+import com.shreyansh.emailservice.model.Mail;
 
 @Service
 public class MailServiceImpl implements MailService {

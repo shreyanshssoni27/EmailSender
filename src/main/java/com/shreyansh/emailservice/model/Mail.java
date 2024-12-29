@@ -1,4 +1,4 @@
-package com.aditya.emailservice.model;
+package com.shreyansh.emailservice.model;
 
 import java.util.Date;
 import java.util.List;

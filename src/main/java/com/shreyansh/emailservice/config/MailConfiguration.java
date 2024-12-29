@@ -1,4 +1,4 @@
-package com.aditya.emailservice.config;
+package com.shreyansh.emailservice.config;
 
 import java.util.Properties;
 

@@ -1,12 +1,12 @@
-package com.aditya.emailservice.controller;
+package com.shreyansh.emailservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.aditya.emailservice.model.Mail;
-import com.aditya.emailservice.service.MailService;
+import com.shreyansh.emailservice.model.Mail;
+import com.shreyansh.emailservice.service.MailService;
 
 @RestController
 public class EmailController {
